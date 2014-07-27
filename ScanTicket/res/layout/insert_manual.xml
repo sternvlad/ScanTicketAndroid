@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_blue" >
+    
+    <LinearLayout
+          	android:id="@+id/focusablelay1"
+			android:focusable="true" 
+			android:orientation="horizontal"
+			android:focusableInTouchMode="true"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"/>
+    
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/hello_world"
+        android:src="@drawable/logo"/>
+
+    <EditText
+        android:id="@+id/edit_ticket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:inputType="number|textCapCharacters"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="70dp"
+        android:hint="Ticket code here"
+        android:textSize="30sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/verify_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/verify"
+        android:textColor="@color/white"
+        android:textSize= "25sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
